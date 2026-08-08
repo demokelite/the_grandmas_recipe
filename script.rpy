@@ -125,7 +125,7 @@ image bg_letter = "images/old_paper_texture.jpg"          # 信件 → 旧纸张
 # ---------- CG 图占位定义 ----------
 # 所有 CG 图资源尚未制作，暂用现有相近图片占位，制作好后替换路径即可
 image cg01 = "images/cg01.png"   # 奶奶的结婚照 (1965) → 旧照片纹理
-image cg02 = "images/old_photo_texture.jpg"   # 奶奶抱着年幼的父亲 (1970s)
+image cg02 = "images/cg02.png"   # 奶奶抱着年幼的父亲 (1970s)
 image cg03 = "images/old_photo_texture.jpg"   # 父亲上大学前的照片 (1982)
 image cg04 = "images/old_photo_texture.jpg"   # 母亲第一次来学做菜 (1995)
 image cg05 = "images/old_photo_texture.jpg"   # 奶奶抱着刚出生的小秋 (2003)
@@ -142,10 +142,16 @@ image item_rice = "images/item_rice.png"
 # ---------- 米饭左右位置 ----------
 # 用于菜品两侧对称摆放米饭
 transform rice_left:
-    xalign 0.20
+    xalign 0.28
     yalign 0.55
 transform rice_right:
-    xalign 0.80
+    xalign 0.72
+    yalign 0.55
+
+# ---------- 菜品偏右位置 ----------
+# 菜品与人物立绘同屏时，菜品偏右避免遮挡
+transform dish_right:
+    xalign 0.58
     yalign 0.55
 
 # ---------- 全局变量 ----------
@@ -194,10 +200,10 @@ label start:
     # call prologue from _call_prologue
 
     # 第一章
-    call chapter1 from _call_chapter1
+    # call chapter1 from _call_chapter1
 
     # # 第二章
-    # call chapter2 from _call_chapter2
+    call chapter2 from _call_chapter2
 
     # # 第三章
     # call chapter3 from _call_chapter3

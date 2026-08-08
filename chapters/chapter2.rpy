@@ -70,8 +70,8 @@ label chapter2:
             narrator "八分钟后，我打开锅盖。"
 
             show item_steamed_fish at truecenter with dissolve
-            show item_rice at rice_left with dissolve
-            show item_rice at rice_right as item_rice_right with dissolve
+            # show item_rice at rice_left with dissolve
+            # show item_rice at rice_right as item_rice_right with dissolve
 
             narrator "蒸汽涌出。鱼肉洁白，筷子轻轻一拨就散开。"
 
@@ -87,8 +87,8 @@ label chapter2:
             narrator "十二分钟后。开锅时鱼肉有些发紧。"
 
             show item_steamed_fish at truecenter with dissolve
-            show item_rice at rice_left with dissolve
-            show item_rice at rice_right as item_rice_right with dissolve
+            # show item_rice at rice_left with dissolve
+            # show item_rice at rice_right as item_rice_right with dissolve
 
             qiu "(用筷子戳了一下)好像有点老。"
 
@@ -106,8 +106,10 @@ label chapter2:
 
     # 上桌
     scene bg_diningtable with dissolve
-    show item_steamed_fish with dissolve
-    show grandma reminisce
+    show item_steamed_fish at truecenter with dissolve
+    show item_rice at rice_left with dissolve
+    show item_rice at rice_right as item_rice_right with dissolve
+    show grandma reminisce at left
 
     qiu "奶奶，您说这是爸爸最爱吃的？"
 
@@ -131,7 +133,7 @@ label chapter2:
     grandma "后来他考上大学，走之前我蒸了一条鱼。"
     grandma "他说火车上吃完了还想吃，连饭盒都舍不得洗，说里面有家里的味道。"
 
-    show qiu thoughtful
+    show qiu thoughtful at right
 
     narrator "我想到在北京的爸爸。他很少回来。"
 
