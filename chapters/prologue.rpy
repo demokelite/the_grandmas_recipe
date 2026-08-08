@@ -5,6 +5,11 @@
 label prologue:
     $ current_chapter = 0
 
+    # 标题出现
+    show text "{size=60}{font=fonts/handwrite.ttf}序章{/font}{/size}" at truecenter with dissolve
+    pause 10.0
+    hide text with dissolve
+
     # 场景：楼下
     scene bg_building with fade
     stop music fadeout 1.0

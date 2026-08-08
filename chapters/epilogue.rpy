@@ -5,6 +5,11 @@
 label epilogue:
     $ current_chapter = 8
 
+    # 标题出现
+    show text "{size=60}{font=fonts/handwrite.ttf}尾声{/font}{/size}" at truecenter with dissolve
+    pause 10.0
+    hide text with dissolve
+
     scene bg_dorm_kitchen with fade
     play music "audio/bgm/new_beginning.mp3" fadein 2.0
 

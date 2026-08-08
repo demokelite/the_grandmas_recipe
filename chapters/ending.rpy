@@ -2,6 +2,17 @@
 # 结局判定与片尾
 # ============================================================
 
+# 图片偏上居中位置（用于二维码与下方文字错开）
+transform top_center:
+    xalign 0.5
+    yalign 0.32
+    zoom 0.45
+
+# 二维码下方文字位置
+transform qr_bottom:
+    xalign 0.5
+    yalign 0.68
+
 label ending_judgment:
     scene black with dissolve
     stop music fadeout 2.0
@@ -19,6 +30,11 @@ label ending_judgment:
 
 # ========== 好结局 ==========
 label ending_good:
+    # 标题出现
+    show text "{size=60}{font=fonts/handwrite.ttf}好结局{/font}{/size}" at truecenter with dissolve
+    pause 10.0
+    hide text with dissolve
+
     scene bg_kitchen with fade
     play music "audio/bgm/reunion.mp3" fadein 2.0
 
@@ -53,6 +69,11 @@ label ending_good:
 
 # ========== 普通结局 ==========
 label ending_normal:
+    # 标题出现
+    show text "{size=60}{font=fonts/handwrite.ttf}普通结局{/font}{/size}" at truecenter with dissolve
+    pause 10.0
+    hide text with dissolve
+
     scene bg_livingroom with fade
     play music "audio/bgm/bittersweet.mp3" fadein 2.0
 
@@ -88,6 +109,11 @@ label ending_normal:
 
 # ========== 感人结局 ==========
 label ending_sad:
+    # 标题出现
+    show text "{size=60}{font=fonts/handwrite.ttf}感人结局{/font}{/size}" at truecenter with dissolve
+    pause 10.0
+    hide text with dissolve
+
     scene bg_balcony with fade
     play music "audio/bgm/gentle_sadness.mp3" fadein 2.0
 
@@ -121,35 +147,37 @@ label ending_sad:
 label credits:
     scene black with dissolve
     stop music fadeout 2.0
-    play music "audio/bgm/credits.mp3" fadein 3.0
+    play music "audio/bgm/ending.mp3" fadein 3.0 loop
 
     # 片尾文字
-    show text "{size=40}谨以此游戏{/size}\n{size=40}献给所有正在或将要面对亲人遗忘的你。{/size}" at truecenter with dissolve
+    show text "{size=48}{color=#ffd700}谨以此游戏{/color}{/size}\n{size=40}献给所有正在或将要{color=#ff9999}面对亲人遗忘{/color}的你。{/size}" at truecenter with dissolve
     pause 4.0
     hide text with dissolve
 
-    show text "{size=32}阿尔兹海默症带走了记忆，带不走爱。{/size}" at truecenter with dissolve
+    show text "{size=40}阿尔兹海默症带走了记忆，{color=#ffd700}带不走爱{/color}。{/size}" at truecenter with dissolve
     pause 3.0
     hide text with dissolve
 
-    show text "{size=28}如果你的家人出现以下情况：{/size}\n\n{size=24}• 经常忘记关火、关水{/size}\n{size=24}• 反复询问同样的问题{/size}\n{size=24}• 忘记回家的路{/size}\n{size=24}• 性格突然变得多疑或暴躁{/size}\n\n{size=28}请及时带他们去医院检查。{/size}\n{size=28}早期干预，可以有效延缓病情。{/size}" at truecenter with dissolve
+    show text "{size=38}如果你的家人出现以下情况：{/size}\n\n{size=36}{color=#e8c547}1. 经常忘记关火、关水{/color}{/size}\n{size=36}{color=#e8c547}2. 反复询问同样的问题{/color}{/size}\n{size=36}{color=#e8c547}3. 忘记回家的路{/color}{/size}\n{size=36}{color=#e8c547}4. 性格突然变得多疑或暴躁{/color}{/size}\n\n{size=38}请及时带他们去医院检查。{/size}\n{size=38}{color=#ff9999}早期干预，可以有效延缓病情。{/color}{/size}" at truecenter with dissolve
     pause 8.0
     hide text with dissolve
 
-    show text "{size=36}陪伴，是最好的治疗。{/size}" at truecenter with dissolve
+    show text "{size=46}{color=#ffd700}陪伴，是最好的治疗。{/color}{/size}" at truecenter with dissolve
     pause 3.0
     hide text with dissolve
 
-    show text "{size=28}了解更多：认知症友好社区公益项目{/size}\n{size=24}www.example.com/dementia-care{/size}" at truecenter with dissolve
+    show qrcode_care at top_center with dissolve
+    show text "{size=34}了解更多：{color=#4fc3f7}认知症友好社区公益项目{/color}{/size}\n{size=28}https://gongyi.qq.com/succor/detail.htm?id=3013612{/size}" at qr_bottom with dissolve
     pause 5.0
     hide text with dissolve
+    hide qrcode_care with dissolve
 
     # 制作人员
-    show text "{size=32}制作团队{/size}\n\n{size=24}剧本 / 美术 / 程序{/size}\n{size=24}[你的名字]{/size}\n\n{size=20}参考素材来源：{/size}\n{size=20}阿尔兹海默症相关公益组织{/size}" at truecenter with dissolve
+    show text "{size=38}{color=#ffd700}制作团队{/color}{/size}\n\n{size=30}知识混子{/size}\n{size=30}制作{/size}\n\n{size=24}参考素材来源：{/size}\n{size=24}阿尔兹海默症相关公益组织{/size}" at truecenter with dissolve
     pause 6.0
     hide text with dissolve
 
-    show text "{size=36}感谢您的游玩。{/size}\n\n{size=24}—— 奶奶的菜谱 ——{/size}" at truecenter with dissolve
+    show text "{size=44}{color=#ffd700}感谢您的游玩。{/color}{/size}\n\n{size=30}—— 奶奶的菜谱 ——{/size}" at truecenter with dissolve
     pause 4.0
     hide text with dissolve
 

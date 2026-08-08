@@ -5,6 +5,11 @@
 label chapter6:
     $ current_chapter = 6
 
+    # 标题出现
+    show text "{size=60}{font=fonts/handwrite.ttf}第六道菜{/font}{/size}" at truecenter with dissolve
+    pause 10.0
+    hide text with dissolve
+
     scene bg_kitchen with fade
     play music "audio/bgm/tender.mp3" fadein 2.0
 
