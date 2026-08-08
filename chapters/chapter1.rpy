@@ -130,7 +130,9 @@ label chapter1:
 
     # 成品上桌
     scene bg_diningtable with dissolve
-    show item_tomato_egg at right with dissolve
+    show item_tomato_egg at truecenter with dissolve
+    show item_rice at rice_left with dissolve
+    show item_rice at rice_right as item_rice_right with dissolve
     show grandma happy at left
 
     narrator "一盘红黄相间的西红柿炒鸡蛋摆在饭桌上。"

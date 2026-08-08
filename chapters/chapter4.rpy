@@ -112,7 +112,9 @@ label chapter4:
     hide cg04 with dissolve
 
     # 成品
-    show item_shredded_potato at right with dissolve
+    show item_shredded_potato at truecenter with dissolve
+    show item_rice at rice_left with dissolve
+    show item_rice at rice_right as item_rice_right with dissolve
 
     narrator "一盘酸辣土豆丝上桌。色泽金黄，醋香扑鼻。"
 

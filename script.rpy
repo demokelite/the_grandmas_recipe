@@ -117,14 +117,14 @@ image grandma dressed:
 
 # ---------- 缺失背景图占位定义 ----------
 # 以下背景资源尚未制作，暂用现有相近图片占位，制作好后替换路径即可
-image bg_kitchen_morning = "images/bg_kitchen.png"       # 厨房早晨 → 厨房
-image bg_diningtable = "images/bg_livingroom.png"         # 饭桌 → 客厅
+image bg_kitchen_morning = "images/bg_kitchen_morning.png"      
+image bg_diningtable = "images/bg_diningtable.png"        
 image bg_kitchen_stools = "images/bg_kitchen.png"         # 厨房凳子 → 厨房
 image bg_letter = "images/old_paper_texture.jpg"          # 信件 → 旧纸张纹理
 
 # ---------- CG 图占位定义 ----------
 # 所有 CG 图资源尚未制作，暂用现有相近图片占位，制作好后替换路径即可
-image cg01 = "images/old_photo_texture.jpg"   # 奶奶的结婚照 (1965) → 旧照片纹理
+image cg01 = "images/cg01.png"   # 奶奶的结婚照 (1965) → 旧照片纹理
 image cg02 = "images/old_photo_texture.jpg"   # 奶奶抱着年幼的父亲 (1970s)
 image cg03 = "images/old_photo_texture.jpg"   # 父亲上大学前的照片 (1982)
 image cg04 = "images/old_photo_texture.jpg"   # 母亲第一次来学做菜 (1995)
@@ -135,8 +135,18 @@ image cg08 = "images/old_paper_texture.jpg"   # 小秋读信 → 旧纸张纹理
 image cg09 = "images/bg_dorm_kitchen.jpg"     # 宿舍做菜 (尾声) → 宿舍厨房
 image cg10 = "images/handwritten_recipe.jpg"  # 菜谱封面 (主视觉) → 手写菜谱
 
-# ---------- 缺失道具图占位定义 ----------
-image item_recipe_first = "images/handwritten_recipe.jpg"  # 菜谱第一页 → 手写菜谱
+# ---------- 道具图定义 ----------
+image item_recipe_first = "images/handwritten_recipe.jpg"
+image item_rice = "images/item_rice.png"
+
+# ---------- 米饭左右位置 ----------
+# 用于菜品两侧对称摆放米饭
+transform rice_left:
+    xalign 0.20
+    yalign 0.55
+transform rice_right:
+    xalign 0.80
+    yalign 0.55
 
 # ---------- 全局变量 ----------
 default companionship = 0          # 陪伴感 0-100

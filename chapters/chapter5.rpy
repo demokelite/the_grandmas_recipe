@@ -82,7 +82,9 @@ label chapter5:
 
     # 上桌
     scene bg_diningtable with dissolve
-    show item_dumplings at right with dissolve
+    show item_dumplings at truecenter with dissolve
+    show item_rice at rice_left with dissolve
+    show item_rice at rice_right as item_rice_right with dissolve
 
     qiu "(吃饺子)好吃！奶奶，这是我这辈子吃过最好吃的饺子。"
 

@@ -130,7 +130,9 @@ label chapter3:
     # 肉好了
     scene bg_kitchen with dissolve
     play sound "audio/sfx/lid_open.mp3"
-    show item_braised_pork with dissolve
+    show item_braised_pork at truecenter with dissolve
+    show item_rice at rice_left with dissolve
+    show item_rice at rice_right as item_rice_right with dissolve
 
     narrator "锅盖打开。一锅红亮的红烧肉，肥瘦相间，筷子夹起来微微颤动。"
 

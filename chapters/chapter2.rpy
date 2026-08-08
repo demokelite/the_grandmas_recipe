@@ -69,7 +69,9 @@ label chapter2:
 
             narrator "八分钟后，我打开锅盖。"
 
-            show item_steamed_fish at right with dissolve
+            show item_steamed_fish at truecenter with dissolve
+            show item_rice at rice_left with dissolve
+            show item_rice at rice_right as item_rice_right with dissolve
 
             narrator "蒸汽涌出。鱼肉洁白，筷子轻轻一拨就散开。"
 
@@ -84,7 +86,9 @@ label chapter2:
 
             narrator "十二分钟后。开锅时鱼肉有些发紧。"
 
-            show item_steamed_fish at right with dissolve
+            show item_steamed_fish at truecenter with dissolve
+            show item_rice at rice_left with dissolve
+            show item_rice at rice_right as item_rice_right with dissolve
 
             qiu "(用筷子戳了一下)好像有点老。"
 
