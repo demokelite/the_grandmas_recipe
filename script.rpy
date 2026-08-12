@@ -1,4 +1,4 @@
-﻿# ============================================================
+# ============================================================
 # 《奶奶的菜谱》 - 主脚本入口
 # 小红花赛道参赛作品
 # ============================================================
@@ -77,42 +77,42 @@ image qiu cooking:
     "images/characters/qiu_cooking.png"
     zoom 0.75
 
-# 奶奶 - 仅 neutral 有真实立绘，其余用 neutral 占位
+# 奶奶 - 全部使用真实立绘
 image grandma neutral:
     "images/characters/grandma_neutral.png"
     zoom 0.65
 image grandma happy:
-    "images/characters/grandma_neutral.png"
+    "images/characters/grandma_happy.png"
     zoom 0.65
 image grandma calm:
-    "images/characters/grandma_neutral.png"
+    "images/characters/grandma_calm.png"
     zoom 0.65
 image grandma worried:
-    "images/characters/grandma_neutral.png"
+    "images/characters/grandma_worried.png"
     zoom 0.65
 image grandma teach:
-    "images/characters/grandma_neutral.png"
+    "images/characters/grandma_teach.png"
     zoom 0.65
 image grandma laugh:
-    "images/characters/grandma_neutral.png"
+    "images/characters/grandma_laugh.png"
     zoom 0.65
 image grandma reminisce:
-    "images/characters/grandma_neutral.png"
+    "images/characters/grandma_reminisce.png"
     zoom 0.65
 image grandma energetic:
-    "images/characters/grandma_neutral.png"
+    "images/characters/grandma_energetic.png"
     zoom 0.65
 image grandma confused:
-    "images/characters/grandma_neutral.png"
+    "images/characters/grandma_confused.png"
     zoom 0.65
 image grandma relieved:
-    "images/characters/grandma_neutral.png"
+    "images/characters/grandma_relieved.png"
     zoom 0.65
 image grandma crying:
-    "images/characters/grandma_neutral.png"
+    "images/characters/grandma_crying.png"
     zoom 0.65
 image grandma dressed:
-    "images/characters/grandma_neutral.png"
+    "images/characters/grandma_dressed.png"
     zoom 0.65
 
 # ---------- 缺失背景图占位定义 ----------
@@ -130,7 +130,7 @@ image cg03 = "images/old_photo_texture.jpg"   # 父亲上大学前的照片 (198
 image cg04 = "images/old_photo_texture.jpg"   # 母亲第一次来学做菜 (1995)
 image cg05 = "images/old_photo_texture.jpg"   # 奶奶抱着刚出生的小秋 (2003)
 image cg06 = "images/old_photo_texture.jpg"   # 奶奶教小秋做菜 (主线)
-image cg07 = "images/bg_balcony.jpg"          # 阳台上喝粥 → 阳台背景
+image cg07 = "images/bg_balcony.png"          # 阳台上喝粥 → 阳台背景
 image cg08 = "images/old_paper_texture.jpg"   # 小秋读信 → 旧纸张纹理
 image cg09 = "images/bg_dorm_kitchen.jpg"     # 宿舍做菜 (尾声) → 宿舍厨房
 image cg10 = "images/handwritten_recipe.jpg"  # 菜谱封面 (主视觉) → 手写菜谱
@@ -138,6 +138,16 @@ image cg10 = "images/handwritten_recipe.jpg"  # 菜谱封面 (主视觉) → 手
 # ---------- 道具图定义 ----------
 image item_recipe_first = "images/handwritten_recipe.jpg"
 image item_rice = "images/item_rice.png"
+image item_salt_sugar = "images/item_salt_sugar.png"
+image item_tomato_egg = "images/item_tomato_egg.png"
+image item_steamed_fish = "images/item_steamed_fish.png"
+image item_braised_pork = "images/item_braised_pork.jpg"
+image item_shredded_potato = "images/item_shredded_potato.jpg"
+image item_dumplings = "images/item_dumplings.jpg"
+image item_millet_porridge = "images/item_millet_porridge.jpg"
+
+# ---------- 其他图片定义 ----------
+image qrcode_care = "images/qrcode_care.png"
 
 # ---------- 米饭左右位置 ----------
 # 用于菜品两侧对称摆放米饭

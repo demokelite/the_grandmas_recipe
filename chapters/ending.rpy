@@ -14,7 +14,10 @@ transform qr_bottom:
     yalign 0.68
 
 label ending_judgment:
+    $ renpy.log("[ending] === 结局判定 开始 ===")
+    $ renpy.log("[ending] scene: black")
     scene black with dissolve
+    $ renpy.log("[ending] stop music")
     stop music fadeout 2.0
 
     # 判定结局
@@ -30,21 +33,26 @@ label ending_judgment:
 
 # ========== 好结局 ==========
 label ending_good:
+    $ renpy.log("[ending] === 好结局 开始 ===")
     # 标题出现
     show text "{size=60}{font=fonts/handwrite.ttf}好结局{/font}{/size}" at truecenter with dissolve
     pause 10.0
     hide text with dissolve
 
+    $ renpy.log("[ending] scene: bg_kitchen")
     scene bg_kitchen with fade
+    $ renpy.log("[ending] music: audio/bgm/reunion.mp3")
     play music "audio/bgm/reunion.mp3" fadein 2.0
 
     narrator "寒假。我推开奶奶家的门。"
 
+    $ renpy.log("[ending] show: grandma happy at center")
     show grandma happy at center with dissolve
 
     grandma "(转身，眼神清澈)小秋！快进来，外面冷！"
     grandma "奶奶做了你爱吃的红烧肉。"
 
+    $ renpy.log("[ending] show: qiu happy at left")
     show qiu happy at left with dissolve
 
     qiu "(走过去帮忙端菜)奶奶，我在学校创了一道新菜。"
@@ -65,24 +73,30 @@ label ending_good:
     show text "{size=24}记忆会模糊，但爱会不断续写。{/size}" at truecenter with dissolve
     pause 3.0
 
+    $ renpy.log("[ending] === 好结局 结束 ===")
     return
 
 # ========== 普通结局 ==========
 label ending_normal:
+    $ renpy.log("[ending] === 普通结局 开始 ===")
     # 标题出现
     show text "{size=60}{font=fonts/handwrite.ttf}普通结局{/font}{/size}" at truecenter with dissolve
     pause 10.0
     hide text with dissolve
 
+    $ renpy.log("[ending] scene: bg_livingroom")
     scene bg_livingroom with fade
+    $ renpy.log("[ending] music: audio/bgm/bittersweet.mp3")
     play music "audio/bgm/bittersweet.mp3" fadein 2.0
 
     narrator "寒假。我推开奶奶家的门。"
 
+    $ renpy.log("[ending] show: grandma neutral at center")
     show grandma neutral at center with dissolve
 
     grandma "(看到我，愣了愣)你……你是来找谁的？"
 
+    $ renpy.log("[ending] show: qiu touched at left")
     show qiu touched at left with dissolve
 
     qiu_inner "我忍住鼻酸，走进厨房。"
@@ -105,20 +119,25 @@ label ending_normal:
     show text "{size=24}她忘了你的名字，但记得你带来的味道。{/size}" at truecenter with dissolve
     pause 3.0
 
+    $ renpy.log("[ending] === 普通结局 结束 ===")
     return
 
 # ========== 感人结局 ==========
 label ending_sad:
+    $ renpy.log("[ending] === 感人结局 开始 ===")
     # 标题出现
     show text "{size=60}{font=fonts/handwrite.ttf}感人结局{/font}{/size}" at truecenter with dissolve
     pause 10.0
     hide text with dissolve
 
+    $ renpy.log("[ending] scene: bg_balcony")
     scene bg_balcony with fade
+    $ renpy.log("[ending] music: audio/bgm/gentle_sadness.mp3")
     play music "audio/bgm/gentle_sadness.mp3" fadein 2.0
 
     narrator "寒假。我推开奶奶家的门。"
 
+    $ renpy.log("[ending] show: grandma calm at center")
     show grandma calm at center with dissolve
 
     narrator "奶奶在阳台上晒太阳。"
@@ -126,6 +145,7 @@ label ending_sad:
 
     grandma "(看向我，礼貌地微笑)你好。"
 
+    $ renpy.log("[ending] show: qiu sad at left")
     show qiu sad at left with dissolve
 
     qiu_inner "我走进奶奶的房间。"
@@ -145,8 +165,12 @@ label ending_sad:
     pause 3.0
 
 label credits:
+    $ renpy.log("[ending] === 片尾 开始 ===")
+    $ renpy.log("[ending] scene: black")
     scene black with dissolve
+    $ renpy.log("[ending] stop music")
     stop music fadeout 2.0
+    $ renpy.log("[ending] music: audio/bgm/ending.mp3")
     play music "audio/bgm/ending.mp3" fadein 3.0 loop
 
     # 片尾文字
@@ -166,6 +190,7 @@ label credits:
     pause 3.0
     hide text with dissolve
 
+    $ renpy.log("[ending] show: qrcode_care at top_center")
     show qrcode_care at top_center with dissolve
     show text "{size=34}了解更多：{color=#4fc3f7}认知症友好社区公益项目{/color}{/size}\n{size=28}https://gongyi.qq.com/succor/detail.htm?id=3013612{/size}" at qr_bottom with dissolve
     pause 5.0
@@ -181,4 +206,5 @@ label credits:
     pause 4.0
     hide text with dissolve
 
+    $ renpy.log("[ending] === 片尾 结束 ===")
     return
